@@ -1,2 +1,3 @@
 # CTF-Writeups
-This repo will include CTF Writeups for all CTFs I join
+This repo will include CTF Writeups for all CTFs joined
+
