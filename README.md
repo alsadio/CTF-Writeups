@@ -1,2 +1,2 @@
 # CTF-Writeups
-Solutions of the CTF challenges I solved
+This repo will include CTF Writeups for all CTFs I join
