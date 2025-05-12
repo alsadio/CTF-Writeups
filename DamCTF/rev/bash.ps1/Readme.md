@@ -131,7 +131,6 @@ This informed me that I needed to use OpenSSL with AES-256-CBC for decryption.
 Based on my analysis, I knew:
 1. The encryption algorithm (AES-256-CBC)
 2. The key was downloaded to a file named 'A'
-3. The script uses the key with `-pass file:key`
 
 The key downloaded from the URL was:
 ```
@@ -139,9 +138,9 @@ I understand that, without my agreement, Alpine F1 have put out a press release 
 ```
 
 To decrypt the flag, I ran:
-
+NOTE: I renamed enc to encrypted_file
 ```bash
-$ openssl enc -aes-256-cbc -d -pass file:A -in enc -out flag
+$ openssl enc -aes-256-cbc -d -pass file:A -in encrypted_file -out flag
 $ cat flag
 dam{unattended_arch_boxes_will_be_given_powershell}
 ```
